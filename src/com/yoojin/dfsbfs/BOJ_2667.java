@@ -19,7 +19,7 @@ class Node {
 		return y;
 	}
 }
-public class BOJ_2667 {
+class BOJ_2667 {
 	
 	static boolean[][] visited;
 	static int[][] map;

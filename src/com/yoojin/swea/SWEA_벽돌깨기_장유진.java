@@ -10,7 +10,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class SWEA_벽돌깨기 {
+public class SWEA_벽돌깨기_장유진 {
 	static class Point{
 		int x;
 		int y;

@@ -9,31 +9,32 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-class Node implements Comparable<Node>{
-	int index;
-	int distance;
-	
-	public Node(int index, int distance) {
-		this.index = index;
-		this.distance = distance;
-	}
-	public int getIndex() {
-		return index;
-	}
-	public int getDistance() {
-		return distance;
-	}
-	@Override
-	public int compareTo(Node o) {
-		if(this.distance < o.distance) {
-			return -1;
-		}
-		return 1;
-	}
-	
-}
+
 
 public class BOJ_18352 {
+	static class Node implements Comparable<Node>{
+		int index;
+		int distance;
+		
+		public Node(int index, int distance) {
+			this.index = index;
+			this.distance = distance;
+		}
+		public int getIndex() {
+			return index;
+		}
+		public int getDistance() {
+			return distance;
+		}
+		@Override
+		public int compareTo(Node o) {
+			if(this.distance < o.distance) {
+				return -1;
+			}
+			return 1;
+		}
+		
+	}
 	public static final int INF = (int)1e9;
 	public static int n,m,k,start;
 	public static int[] d;

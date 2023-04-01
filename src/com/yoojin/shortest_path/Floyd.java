@@ -49,7 +49,7 @@ public class Floyd {
 				if(graph[i][j] == INF) {
 					System.out.print("INF ");
 				} else {
-					System.out.println(d[i][j]+" ");
+					System.out.println(graph[i][j]+" ");
 				}
 			}
 			System.out.println();

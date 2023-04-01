@@ -5,31 +5,32 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-class Node implements Comparable<Node> { 
-	int index;
-	int distance;
-	public Node(int index, int distance) {
-		super();
-		this.index = index;
-		this.distance = distance;
-	}
-	public int getIndex() {
-		return index;
-	}
-	public int getDistance() {
-		return distance;
-	}
-	@Override
-	public int compareTo(Node other) {
-		if(this.distance < other.distance) {
-			return -1;
-		}
-		return 1;
-	}
-	
-}
+
 
 public class Dijkstra {
+	static class Node implements Comparable<Node> { 
+		int index;
+		int distance;
+		public Node(int index, int distance) {
+			super();
+			this.index = index;
+			this.distance = distance;
+		}
+		public int getIndex() {
+			return index;
+		}
+		public int getDistance() {
+			return distance;
+		}
+		@Override
+		public int compareTo(Node other) {
+			if(this.distance < other.distance) {
+				return -1;
+			}
+			return 1;
+		}
+		
+	}
 	private static final int INF = (int)1e9; // 무한대의 수 
 	private static int n,m,start; // n개의 노드, m개의 간선, start 시작위치
 	// 연결 노드의 정보를 담을 리스트

@@ -4,30 +4,32 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Node {
-	int curNode;
-	int nextNode;
-	int cost;
-	public Node(int curNode, int nextNode, int cost) {
-		super();
-		this.curNode = curNode;
-		this.nextNode = nextNode;
-		this.cost = cost;
-	}
-	public int getCurNode() {
-		return curNode;
-	}
-	public int getNextNode() {
-		return nextNode;
-	}
-	public int getCost() {
-		return cost;
-	}
-	
-}
+
 
 
 public class Bell {
+	static class Node {
+		int curNode;
+		int nextNode;
+		int cost;
+		public Node(int curNode, int nextNode, int cost) {
+			super();
+			this.curNode = curNode;
+			this.nextNode = nextNode;
+			this.cost = cost;
+		}
+		public int getCurNode() {
+			return curNode;
+		}
+		public int getNextNode() {
+			return nextNode;
+		}
+		public int getCost() {
+			return cost;
+		}
+		
+	}
+	
 	private static final int INF = (int)1e9;
 	private static int n,m; 
 	private static long[] d = new long[501];

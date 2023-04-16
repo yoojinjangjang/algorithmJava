@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * 풀이 종료: 
  * 풀이 시간: 
  */
-public class BJ_1976 {
+public class BJ_1976_여행가자_장유진 {
 	static int[][] map;
 	static int N,M;
 	static int[] travels;
